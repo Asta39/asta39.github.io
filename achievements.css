@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Hero Section with Blur */
+  .hero-section {
+    height: 100vh;
+    background: url('blur.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blur-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  }
+  
+  .blur-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .blur-box .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color:gold;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .blur-box .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Achievements Section */
+  .achievements-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #380404;
+  }
+  
+  .achievements-section h2 {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .award-card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .award-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .award-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .award-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+  }
+  
+  .award-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
