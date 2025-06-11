@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hustle Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Get in touch with Hustle Campus and join our community.">
+    <link rel="manifest" href="manifest.json">
+    <!-- Add more meta tags for SEO later -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Hustle Campus</a>
+                <button class="nav-toggle" aria-label="toggle navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hustles.html">Side Hustles</a></li>
+                    <li><a href="skills.html">Skills Hub</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li> {/* Mark as active */}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Get in Touch & Join Our Community</h1>
+
+        <div class="contact-page-layout">
+            <section id="contact-form-section">
+                <h2>Connect With Us</h2>
+                <p>Have questions, suggestions, or want to collaborate? Fill out the form below, and we'll get back to you soon!</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="campus">Campus (Optional):</label>
+                        <input type="text" id="campus" name="campus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">How can we help you?</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="join-newsletter" name="join-newsletter" value="yes">
+                        <label for="join-newsletter">Join our Newsletter for tips, new hustle alerts, and updates.</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="mentorship-waitlist" name="mentorship-waitlist" value="yes">
+                        <label for="mentorship-waitlist">I'm interested in joining the waitlist for the Hustle Campus Mentorship Program.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+
+            <aside id="community-section">
+                <h2>Join the Hustle Campus Network</h2>
+                <p>Connect with fellow student hustlers, share tips, and get support in our vibrant community channels.</p>
+
+                <div class="community-box whatsapp-box">
+                    <h3>Official WhatsApp Group</h3>
+                    <p>Get real-time support, share successes, and network with peers.</p>
+                    <a href="https://chat.whatsapp.com/YOUR_INVITE_LINK_HERE" class="btn btn-success whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/whatsapp-icon.svg" alt="WhatsApp Icon" class="btn-icon"> <!-- Placeholder icon -->
+                        Join WhatsApp Group
+                    </a>
+                </div>
+
+                <div class="community-box chapters-box">
+                    <h3>Find Local Campus Chapters</h3>
+                    <p>Connect with Hustle Campus members at your university. (Map coming soon!)</p>
+                    <div id="map-placeholder" style="width:100%; height:200px; background-color:#e9ecef; display:flex; align-items:center; justify-content:center; text-align:center; border-radius: var(--border-radius-std);">
+                        <p>Campus map will be embedded here. <br>(e.g., Google Maps Embed)</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hustle Campus. All rights reserved.</p>
+            <!-- Add social media links or other footer content later -->
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top">&uarr;</button>
+    <script src="script.js"></script>
+</body>
+</html>

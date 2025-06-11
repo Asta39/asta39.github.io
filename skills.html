@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Hub - Hustle Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Discover and learn new skills to boost your earning potential.">
+    <link rel="manifest" href="manifest.json">
+    <!-- Add more meta tags for SEO later -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Hustle Campus</a>
+                <button class="nav-toggle" aria-label="toggle navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hustles.html">Side Hustles</a></li>
+                    <li><a href="skills.html" class="active">Skills Hub</a></li> {/* Mark as active */}
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Skills Hub - Level Up!</h1>
+        <p class="intro-paragraph">Explore free learning tracks to gain valuable skills for your online journey. Click 'Start Learning' to access curated resources. Track your progress by marking skills as learned.</p>
+
+        <section class="skills-grid">
+            <article class="card skill-card" data-skill-id="html-css-basics">
+                <!-- <img src="assets/icons/skill-html.svg" alt="HTML/CSS Icon" class="skill-icon"> -->
+                <h2>Basic HTML & CSS</h2>
+                <p>Learn the fundamental building blocks of web development to create and style your own simple websites.</p>
+                <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAA6G" class="btn btn-primary start-learning-btn" target="_blank" rel="noopener noreferrer">Start Learning</a>
+                <button class="btn btn-secondary mark-learned-btn" data-skill-id="html-css-basics">Mark as Learned</button>
+            </article>
+
+            <article class="card skill-card" data-skill-id="canva-design">
+                <!-- <img src="assets/icons/skill-canva.svg" alt="Canva Icon" class="skill-icon"> -->
+                <h2>Canva Design for Beginners</h2>
+                <p>Master Canva to create professional-looking graphics for social media, presentations, and other projects with ease.</p>
+                <a href="https://www.youtube.com/watch?v=VGGbS4_yXgU" class="btn btn-primary start-learning-btn" target="_blank" rel="noopener noreferrer">Start Learning</a>
+                <button class="btn btn-secondary mark-learned-btn" data-skill-id="canva-design">Mark as Learned</button>
+            </article>
+
+            <article class="card skill-card" data-skill-id="social-media-growth">
+                <!-- <img src="assets/icons/skill-social.svg" alt="Social Media Icon" class="skill-icon"> -->
+                <h2>Social Media Growth Strategies</h2>
+                <p>Discover effective techniques to grow your audience and engagement on popular social media platforms like Instagram, TikTok, and Facebook.</p>
+                <a href="https://blog.hootsuite.com/social-media-marketing-for-small-business/" class="btn btn-primary start-learning-btn" target="_blank" rel="noopener noreferrer">Start Learning</a>
+                <button class="btn btn-secondary mark-learned-btn" data-skill-id="social-media-growth">Mark as Learned</button>
+            </article>
+
+            <article class="card skill-card" data-skill-id="online-transcription">
+                <!-- <img src="assets/icons/skill-transcription.svg" alt="Transcription Icon" class="skill-icon"> -->
+                <h2>Online Transcription Basics</h2>
+                <p>Learn how to convert audio and video files into text, a valuable skill for freelance work in various industries.</p>
+                <a href="https://www.gotranscript.com/transcription-jobs/transcription-guidelines" class="btn btn-primary start-learning-btn" target="_blank" rel="noopener noreferrer">Start Learning</a>
+                <button class="btn btn-secondary mark-learned-btn" data-skill-id="online-transcription">Mark as Learned</button>
+            </article>
+
+            <article class="card skill-card" data-skill-id="capcut-video-editing">
+                <!-- <img src="assets/icons/skill-video.svg" alt="Video Editing Icon" class="skill-icon"> -->
+                <h2>Video Editing with CapCut</h2>
+                <p>Get started with CapCut to edit engaging short videos for social media, marketing, or personal projects on your mobile device.</p>
+                <a href="https://www.youtube.com/watch?v=Pzj_n2q7Qfk" class="btn btn-primary start-learning-btn" target="_blank" rel="noopener noreferrer">Start Learning</a>
+                <button class="btn btn-secondary mark-learned-btn" data-skill-id="capcut-video-editing">Mark as Learned</button>
+            </article>
+
+            <article class="card skill-card" data-skill-id="basic-seo">
+                <!-- <img src="assets/icons/skill-seo.svg" alt="SEO Icon" class="skill-icon"> -->
+                <h2>Introduction to SEO</h2>
+                <p>Understand the basics of Search Engine Optimization to help websites rank higher in search results.</p>
+                <a href="https://moz.com/beginners-guide-to-seo" class="btn btn-primary start-learning-btn" target="_blank" rel="noopener noreferrer">Start Learning</a>
+                <button class="btn btn-secondary mark-learned-btn" data-skill-id="basic-seo">Mark as Learned</button>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hustle Campus. All rights reserved.</p>
+            <!-- Add social media links or other footer content later -->
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top">&uarr;</button>
+    <script src="script.js"></script>
+</body>
+</html>

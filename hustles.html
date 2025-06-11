@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustles - Hustle Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Explore various side hustles suitable for university students in Kenya.">
+    <link rel="manifest" href="manifest.json">
+    <!-- Add more meta tags for SEO later -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Hustle Campus</a>
+                <button class="nav-toggle" aria-label="toggle navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hustles.html" class="active">Side Hustles</a></li> {/* Mark as active */}
+                    <li><a href="skills.html">Skills Hub</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Side Hustle Directory</h1>
+
+            <div class="filter-controls">
+                <label for="category-filter">Filter by Category:</label>
+                <select id="category-filter">
+                    <option value="All">All Categories</option>
+                    <option value="Writing">Writing & Content Creation</option>
+                    <option value="Design">Graphic & Web Design</option>
+                    <option value="Sales">Sales & E-commerce</option>
+                    <option value="Farming">Agribusiness & Farming</option>
+                    <option value="Social Media">Social Media & Marketing</option>
+                    <option value="Tutoring">Tutoring & Education</option>
+                    <option value="Crafts">Crafts & Handmade Products</option>
+                </select>
+            </div>
+
+            <section class="hustle-list">
+                <article class="card hustle-card" data-category="Writing">
+                    <h2>Online Article Writing</h2>
+                    <p><strong>Time Required:</strong> <span class="time">5-10 hrs/week</span></p>
+                    <p><strong>Startup Cost:</strong> <span class="cost">Low</span></p>
+                    <p><strong>Difficulty:</strong> <span class="difficulty">Beginner</span></p>
+                    <a href="hustle-single.html?hustle=article-writing" class="btn btn-secondary">Learn More</a>
+                </article>
+
+                <article class="card hustle-card" data-category="Design">
+                    <h2>Canva Graphic Design</h2>
+                    <p><strong>Time Required:</strong> <span class="time">3-7 hrs/week</span></p>
+                    <p><strong>Startup Cost:</strong> <span class="cost">Low</span></p>
+                    <p><strong>Difficulty:</strong> <span class="difficulty">Beginner</span></p>
+                    <a href="hustle-single.html?hustle=canva-design" class="btn btn-secondary">Learn More</a>
+                </article>
+
+                <article class="card hustle-card" data-category="Sales">
+                    <h2>Student E-commerce Store</h2>
+                    <p><strong>Time Required:</strong> <span class="time">Varies (5-15 hrs/week)</span></p>
+                    <p><strong>Startup Cost:</strong> <span class="cost">Medium</span></p>
+                    <p><strong>Difficulty:</strong> <span class="difficulty">Beginner</span></p>
+                    <a href="hustle-single.html?hustle=ecommerce-store" class="btn btn-secondary">Learn More</a>
+                </article>
+
+                <article class="card hustle-card" data-category="Farming">
+                    <h2>Urban Kitchen Gardening</h2>
+                    <p><strong>Time Required:</strong> <span class="time">3-5 hrs/week</span></p>
+                    <p><strong>Startup Cost:</strong> <span class="cost">Low</span></p>
+                    <p><strong>Difficulty:</strong> <span class="difficulty">Beginner</span></p>
+                    <a href="hustle-single.html?hustle=kitchen-gardening" class="btn btn-secondary">Learn More</a>
+                </article>
+
+                <article class="card hustle-card" data-category="Social Media">
+                    <h2>Social Media Management (Local Biz)</h2>
+                    <p><strong>Time Required:</strong> <span class="time">5-12 hrs/week per client</span></p>
+                    <p><strong>Startup Cost:</strong> <span class="cost">Low</span></p>
+                    <p><strong>Difficulty:</strong> <span class="difficulty">Beginner</span></p>
+                    <a href="hustle-single.html?hustle=social-media-biz" class="btn btn-secondary">Learn More</a>
+                </article>
+
+                <article class="card hustle-card" data-category="Writing">
+                    <h2>Blog Content Creation</h2>
+                    <p><strong>Time Required:</strong> <span class="time">4-8 hrs/week</span></p>
+                    <p><strong>Startup Cost:</strong> <span class="cost">Low</span></p>
+                    <p><strong>Difficulty:</strong> <span class="difficulty">Beginner</span></p>
+                    <a href="hustle-single.html?hustle=blog-content" class="btn btn-secondary">Learn More</a>
+                </article>
+
+                <article class="card hustle-card" data-category="Tutoring">
+                    <h2>Online Tutoring (KCSE Subjects)</h2>
+                    <p><strong>Time Required:</strong> <span class="time">Flexible (2-10 hrs/week)</span></p>
+                    <p><strong>Startup Cost:</strong> <span class="cost">Low</span></p>
+                    <p><strong>Difficulty:</strong> <span class="difficulty">Beginner</span></p>
+                    <a href="hustle-single.html?hustle=online-tutoring" class="btn btn-secondary">Learn More</a>
+                </article>
+
+                <article class="card hustle-card" data-category="Crafts">
+                    <h2>Handmade Jewelry Making</h2>
+                    <p><strong>Time Required:</strong> <span class="time">5-10 hrs/week</span></p>
+                    <p><strong>Startup Cost:</strong> <span class="cost">Medium</span></p>
+                    <p><strong>Difficulty:</strong> <span class="difficulty">Beginner</span></p>
+                    <a href="hustle-single.html?hustle=handmade-jewelry" class="btn btn-secondary">Learn More</a>
+                </article>
+
+                <article class="card hustle-card" data-category="Design">
+                    <h2>Basic Video Editing (Shorts/Reels)</h2>
+                    <p><strong>Time Required:</strong> <span class="time">5-8 hrs/week</span></p>
+                    <p><strong>Startup Cost:</strong> <span class="cost">Low</span></p>
+                    <p><strong>Difficulty:</strong> <span class="difficulty">Beginner</span></p>
+                    <a href="hustle-single.html?hustle=video-editing" class="btn btn-secondary">Learn More</a>
+                </article>
+                 <article class="card hustle-card" data-category="Sales">
+                    <h2>Affiliate Marketing (Kenyan Brands)</h2>
+                    <p><strong>Time Required:</strong> <span class="time">Varies (3-10 hrs/week)</span></p>
+                    <p><strong>Startup Cost:</strong> <span class="cost">Low</span></p>
+                    <p><strong>Difficulty:</strong> <span class="difficulty">Beginner</span></p>
+                    <a href="hustle-single.html?hustle=affiliate-marketing" class="btn btn-secondary">Learn More</a>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hustle Campus. All rights reserved.</p>
+            <!-- Add social media links or other footer content later -->
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top">&uarr;</button>
+    <script src="script.js"></script>
+</body>
+</html>
